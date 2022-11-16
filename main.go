@@ -2,9 +2,9 @@ package main
 
 import (
    "fmt"
-   "github.com/silcker/dart/dartlib"
+   "github.com/silcker/builder/reader/reader"
 )
 
 func main() {
-   fmt.Println(reader._config("C:/fork/core/silcker-config.yaml"))
+   fmt.Printf(reader.Config("C:/fork/core/silcker-config.yaml") );
 }
