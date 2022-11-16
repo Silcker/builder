@@ -1,10 +1,15 @@
 package main
 
 import (
-   "fmt"
-   "github.com/silcker/builder/reader"
+	"builder/reader"
+	"fmt"
+	"log"
 )
 
 func main() {
-   fmt.Printf(reader.Config("C:/fork/core/silcker-config.yaml") );
+	c, err := reader.ReadConfig("C:/fork/core/silcker-config.yaml")
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("%#v", c)
 }
