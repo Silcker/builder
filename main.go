@@ -2,7 +2,7 @@ package main
 
 import (
    "fmt"
-   "github.com/silcker/builder/reader/reader"
+   "github.com/silcker/builder/reader"
 )
 
 func main() {
